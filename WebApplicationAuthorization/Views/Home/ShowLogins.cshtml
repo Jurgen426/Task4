@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Show Logins";
+}
+
+<h2>Show Logins</h2>
+
+
+@if (ViewBag.Logins != null)
+{
+    foreach (var item in ViewBag.Logins)
+    {
+        <div>
+            @item.Login
+        </div>
+    }
+}
